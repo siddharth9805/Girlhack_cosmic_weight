@@ -1,7 +1,61 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hello world</title>
+<title>CSS Template</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'cosmic_weight/css/style.css' %}">
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
 <body>
-    <p>Hello team</p>
+    <div id="sun"></div>
+        <div class="rings">
+            <div id="ringOne">
+                <div id="Mercury">
+                    <img src="{% static 'cosmic_weight/images/icons8-mercury-64.png' %}" alt="earth">
+                </div>
+            </div>
+            <div id="ringTwo">
+                <div id="Venus"></div>
+            </div>
+            <div id="ringThree">
+                <div id="Earth"></div>
+            </div>
+            <div id="ringFour">
+                <div id="Mars"></div>
+            </div>
+            <div id="ringFive">
+                <div id="Jupiter"></div>
+            </div>
+            <div id="ringSix">
+                <div id="Saturn"></div>
+            </div>
+            <div id="ringSeven">
+                <div id="Uranus"></div>
+            </div>
+            <div id="ringEight">
+                <div id="Neptune"></div>
+            </div>
+        </div>
+    
 </body>
+<footer>
+    <div class="footer">
+        <p>Powered By: </p>
+        
+            <div class="names">
+               
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+            </div>
+          
+       
+        </div>
+    </footer>
+</html>

@@ -12,10 +12,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-#Mercury{
-
-
-}
    
 .names {
     overflow: hidden;
