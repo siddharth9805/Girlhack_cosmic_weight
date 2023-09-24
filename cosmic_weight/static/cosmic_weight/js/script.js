@@ -7,11 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // On click, open a menu that displays Venus data
         console.log("clicked");
         if(isVisible) {
-            theMenu.style.display = "none";
+            theMenu.style.display = none;
+            theMenu.style.animationName = "CloseMenu";
+            theMenu.style.animationDelay = "0.5s";
+            theMenu.style.animationDirection = "linear";
+            theMenu.style.animationTimingFunction = "ease-in-out";
+            theMenu.style.animationFillMode = "forwards";
             isVisible = false;
         }
         else {
             theMenu.style.display = "flex";
+            theMenu.style.animationName = "OpenMenu";
+            theMenu.style.animationDelay = "0.5s";
+            theMenu.style.animationDirection = "linear";
+            theMenu.style.animationTimingFunction = "ease-in-out";
+            theMenu.style.animationFillMode = "forwards";
             isVisible = true;
         }
     });
