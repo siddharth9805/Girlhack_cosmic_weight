@@ -32,13 +32,15 @@
         <div class="img-wrap">
         <div class="planets" id="Mercury">
             <img src="{% static 'cosmic_weight/images/Mercury.png' %}" id="Mercury-Image"alt="Mercury">
-            <p class="desc">Mercury</p>
+            <p id="merc-desc" class="desc">Mercury</p>
             <div class="menu" id="Mercury-my-menu">
-                <form id="Mercury-my-form">
-                    <label for="weight">Mercury: Enter Weight: </label><br>
-                    <input type="text" id="weight" name="weight" value="weight"><br>
+                <form id="Mercury-my-form" onsubmit="return false">
+                    <label for="weight_merc_i">Mercury: Enter Weight: </label><br>
+                    <input type="text" id="weight_merc_i" name="weight_merc_i" value="weight"><br>
+                    <input type="hidden" name="field1" id="mercury_id" value="mercury">
                     <input type="submit" class="submit" value="Submit">
-                  </form> 
+                </form>
+                <p id="weight_merc_p"></p> 
             </div>
         </div>
         </div>

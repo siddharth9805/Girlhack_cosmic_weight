@@ -142,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("fired");
     let myImg = document.getElementById("Pluto");
@@ -160,25 +161,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
-    var apiResponseElement = document.getElementById('Mercury-my-form');
+    document.getElementById("Mercury-my-form").addEventListener("submit", (event) => 
+    {
+        event.preventDefault();
 
-    // Define the data to send in the POST request
-    var data = new FormData(apiResponseElement);
+        // Get value from input BOX
+        var merc_weight = document.getElementById("weight_merc_i").value;
+        var apiResponseElement = document.getElementById("weight_merc_p");
 
-    // Make a POST request to the API
-    fetch('http://127.0.0.1:8000/api/planet_weight/', {
-        method: 'POST',
-        headers: {
+        var obj = {"weight": merc_weight, "planet": "mercury"};
+        
+        // Make a POST request to the API
+        fetch('http://127.0.0.1:8000/api/planet_weight/', {
+            method: 'POST',
+            headers: {
             'Content-Type': 'application/json',
-        },
-        body: data,
-    })
+            },
+            body: JSON.stringify(obj),
+        })
         .then(response => response.json())
-        .then(data => {
-            apiResponseElement.textContent = data;
+        .then(obj => {
+            apiResponseElement.textContent = obj.weight;
         })
         .catch(error => {
             console.error('Error:', error);
         });
+    });
 });
