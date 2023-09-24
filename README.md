@@ -21,10 +21,18 @@ This project can be built on further. We were originally going to create an orbi
 
 2. Python must be installed in your machine.
 
-3. Create an environment using python -m venv venv
+3. Create an environment using `python -m venv venv`
 
 4. To activate the environment in Windows, use `venv\Scripts\activate`. To activate the environment in MacOS, use `source venv/bin activate`
 
 5. Install the requirements using `pip install -r requirements.txt`
 
 6. To run the server use `python manage.py runserver` 
+
+### Screenshot
+
+![Alt text](image.png)
+
+### Credits
+
+
