@@ -29,7 +29,7 @@ This project can be built on further. We were originally going to create an orbi
 
 6. To run the server use `python manage.py runserver` 
 
-### Screenshot
+### Snippet of Project
 
 ![Alt text](screenshot_page.png)
 
