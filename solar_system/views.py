@@ -37,6 +37,8 @@ def weight_calculator(request,payload:Weight_schema):
         planet_weight=mass*11.15
     elif planet == "earth":
         planet_weight=earth_weight
+    elif planet == "pluto":
+        planet_weight=mass*0.063
     
     result={'weight':planet_weight}
 

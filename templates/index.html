@@ -31,14 +31,19 @@
         <div id="ringOne">
         <div class="img-wrap">
         <div class="planets" id="Mercury">
-            <img src="{% static 'cosmic_weight/images/Mercury.png' %}" alt="Mercury">
-            <p class="desc">Mercury</p>
+            <img src="{% static 'cosmic_weight/images/Mercury.png' %}" id="Mercury-Image"alt="Mercury">
+            <p id="merc-desc" class="desc">Mercury</p>
             <div class="menu" id="Mercury-my-menu">
-                <form action="/action_page.php">
-                    <label for="weight">Mercury: Enter Weight: </label><br>
-                    <input type="text" id="weight" name="weight" value="weight"><br>
+                <form id="Mercury-my-form" onsubmit="return false">
+                    <label for="weight_merc_i">Mercury: Enter Weight: </label><br>
+                    <input type="text" id="weight_merc_i" name="weight_merc_i" value="weight"><br>
                     <input type="submit" class="submit" value="Submit">
-                  </form> 
+                </form>
+                <p id="weight_merc_p"></p>
+                <p id="json_name_merc"></p>
+                <p id="json_peri_merc"></p>
+                <p id="json_ap_merc"></p>
+                <p id="json_gravity_merc"></p>
             </div>
         </div>
         </div>
@@ -49,13 +54,18 @@
     <div class="img-wrap">
     <div class="planets" id="Venus">
         <p class="desc">Venus</p>
-        <img src="{% static 'cosmic_weight/images/Venus.png' %}" alt="Venus">
+        <img src="{% static 'cosmic_weight/images/Venus.png' %}" id="Venus-Image" alt="Venus">
         <div class="menu" id="Venus-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Venus: Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Venus-my-form">
+                <label for="weight_venus_i">Venus: Enter Weight: </label><br>
+                <input type="text" id="weight_venus_i" name="weight_venus_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_venus_p"></p>
+              <p id="json_name_venus"></p>
+              <p id="json_peri_venus"></p>
+              <p id="json_ap_venus"></p>
+              <p id="json_gravity_venus"></p>
         </div>
     </div>
     </div>
@@ -64,13 +74,18 @@
     <div class="img-wrap">
   <div class="planets" id="Earth">
         <p class="desc">Earth</p>
-        <img src="{% static 'cosmic_weight/images/Earth.png' %}" alt="Earth">
+        <img src="{% static 'cosmic_weight/images/Earth.png' %}" id="Earth-Image" alt="Earth">
         <div class="menu" id="Earth-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Earth-my-form">
+                <label for="weight_earth_i">Enter Weight: </label><br>
+                <input type="text" id="weight_earth_i" name="weight_earth_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_earth_p"></p>
+              <p id="json_name_earth"></p>
+              <p id="json_peri_earth"></p>
+              <p id="json_ap_earth"></p>
+              <p id="json_gravity_earth"></p>
         </div>
     </div>
     </div>
@@ -79,13 +94,18 @@
     <div class="img-wrap">
     <div class="planets" id="Mars">
         <p class="desc">Mars</p>
-         <img src="{% static 'cosmic_weight/images/Mars.png' %}" alt="Mars">
+         <img src="{% static 'cosmic_weight/images/Mars.png' %}" id="Mars-Image" alt="Mars">
          <div class="menu" id="Mars-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Mars-my-form">
+                <label for="weight_mars_i">Enter Weight: </label><br>
+                <input type="text" id="weight_mars_i" name="weight_mars_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_mars_p"></p>
+              <p id="json_name_mars"></p>
+              <p id="json_peri_mars"></p>
+              <p id="json_ap_mars"></p>
+              <p id="json_gravity_mars"></p>
         </div>
     </div>
     </div>
@@ -94,13 +114,18 @@
         <div class="img-wrap">
     <div class="planets" id="Jupiter">
         <p class="desc">Jupiter</p>
-        <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" alt="Jupiter">
+        <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" id="Jupiter-Image" alt="Jupiter">
         <div class="menu" id="Jupiter-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Jupiter-my-form">
+                <label for="weight_jupiter_i">Enter Weight: </label><br>
+                <input type="text" id="weight_jupiter_i" name="weight_jupiter_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_jupiter_p"></p>
+              <p id="json_name_jupiter"></p>
+              <p id="json_peri_jupiter"></p>
+              <p id="json_ap_jupiter"></p>
+              <p id="json_gravity_jupiter"></p>
         </div>
      </div>
      </div>
@@ -109,13 +134,18 @@
         <div class="img-wrap">
     <div class="planets" id="Saturn">
         <p class="desc">Saturn</p>
-        <img src="{% static 'cosmic_weight/images/Saturn.png' %}" alt="Saturn">
+        <img src="{% static 'cosmic_weight/images/Saturn.png' %}" id="Saturn-Image" alt="Saturn">
         <div class="menu" id="Saturn-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id= "Saturn-my-form">
+                <label for="weight_saturn_i">Enter Weight: </label><br>
+                <input type="text" id="weight_saturn_i" name="weight_saturn_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_saturn_p"></p>
+              <p id="json_name_saturn"></p>
+              <p id="json_peri_saturn"></p>
+              <p id="json_ap_saturn"></p>
+              <p id="json_gravity_saturn"></p>
         </div>
     </div>
     </div>
@@ -124,13 +154,18 @@
         <div class="img-wrap">
     <div class="planets" id="Uranus">
         <p class="desc">Uranus</p>
-        <img src="{% static 'cosmic_weight/images/Uranus.png' %}" alt="Uranus">
+        <img src="{% static 'cosmic_weight/images/Uranus.png' %}" id="Uranus-Image" alt="Uranus">
         <div class="menu" id="Uranus-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Uranus-my-form">
+                <label for="weight_uranus_i">Enter Weight: </label><br>
+                <input type="text" id="weight_uranus_i" name="weight_uranus_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_uranus_p"></p>
+              <p id="json_name_uranus"></p>
+              <p id="json_peri_uranus"></p>
+              <p id="json_ap_uranus"></p>
+              <p id="json_gravity_uranus"></p>
         </div>
     </div>
     </div>
@@ -139,13 +174,18 @@
         <div class="img-wrap">
     <div class="planets" id="Neptune">
         <p class="desc">Neptune</p>
-        <img src="{% static 'cosmic_weight/images/Neptune.png' %}" alt="Neptune">
+        <img src="{% static 'cosmic_weight/images/Neptune.png' %}" id="Neptune-Image" alt="Neptune">
         <div class="menu" id="Neptune-my-menu">
-            <form action="/action_page.php">
-                <label for="weight">Enter Weight: </label><br>
-                <input type="text" id="weight" name="weight" value="weight"><br>
+            <form id="Neptune-my-form">
+                <label for="weight_neptune_i">Enter Weight: </label><br>
+                <input type="text" id="weight_neptune_i" name="weight_neptune_i" value="weight"><br>
                 <input type="submit" class="submit" value="Submit">
               </form> 
+              <p id="weight_neptune_p"></p>
+              <p id="json_name_neptune"></p>
+              <p id="json_peri_neptune"></p>
+              <p id="json_ap_neptune"></p>
+              <p id="json_gravity_neptune"></p>
         </div>
     </div>
         </div>
@@ -154,13 +194,18 @@
         <div class="img-wrap">
         <div class="planets" id="Pluto">
             <p class="desc">Pluto</p>
-            <img src="{% static 'cosmic_weight/images/Pluto.png' %}" alt="Pluto">
+            <img src="{% static 'cosmic_weight/images/Pluto.png' %}" id="Pluto-Image" alt="Pluto">
             <div class="menu" id="Pluto-my-menu">
-                <form action="/action_page.php">
-                    <label for="weight">Enter Weight: </label><br>
-                    <input type="text" id="weight" name="weight" value="weight"><br>
+                <form id="Pluto-my-form">
+                    <label for="weight_pluto_i">Enter Weight: </label><br>
+                    <input type="text" id="weight_pluto_i" name="weight_pluto_i" value="weight"><br>
                     <input type="submit" class="submit" value="Submit">
                   </form> 
+                  <p id="weight_pluto_p"></p>
+                  <p id="json_name_pluto"></p>
+                  <p id="json_peri_pluto"></p>
+                  <p id="json_ap_pluto"></p>
+                  <p id="json_gravity_pluto"></p>
             </div>
         </div>
         </div>
