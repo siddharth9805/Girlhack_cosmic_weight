@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
   }
+  .header {
+    background-color: black;
+    padding: 28px;
+    text-align: center;
+    color:white;
+  }
   
 .earth{
     color: green;
@@ -12,9 +18,16 @@ body{
     display: flex;
     flex-direction: column;
 }
-#Mercury{
+@keyframes Shake
+{
+    0% {transform: translateY(1px);}
+    50% {transform: translateY(-1px);}
+    100% {transform: translateY(1px);}
+}
 
-
+img{
+    animation: Shake 0.5s linear infinite;
+    animation-timing-function: step-end;
 }
    
 .names {

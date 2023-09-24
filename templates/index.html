@@ -1,7 +1,82 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hello world</title>
+<title>CSS Template</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'cosmic_weight/css/style.css' %}">
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
 <body>
-    <p>Hello team</p>
+    <div class="header">
+        <h1>Cosmic Weight</h1>
+        <p>Welcome to the Cosmic Weight.</p>
+        <p>You have access to comprehensive data on the planets in our solar system.</p>
+        <p>Additionally you could also calculate your estimated weight on each planet.</p>
+        <p>Explore and enjoy.</p>
+      </div>
+    <div id="sun"></div>
+        <div class="rings">
+            <div id="ringOne">
+                <div id="Mercury">
+                    <img src="{% static 'cosmic_weight/images/Mercury.png' %}" alt="Mercury">
+                </div>
+            </div>
+            <div id="ringTwo">
+                <div id="Venus">
+                    <img src="{% static 'cosmic_weight/images/Venus.png' %}" alt="Venus">
+                </div>
+            </div>
+            <div id="ringThree">
+                <div id="Earth">
+                    <img src="{% static 'cosmic_weight/images/Earth.png' %}" alt="Earth">
+                </div>
+            </div>
+            <div id="ringFour">
+                <div id="Mars">
+                    <img src="{% static 'cosmic_weight/images/Mars.png' %}" alt="Mars">
+                </div>
+            </div>
+            <div id="ringFive">
+                <div id="Jupiter">
+                    <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" alt="Jupiter">
+                </div>
+            </div>
+            <div id="ringSix">
+                <div id="Saturn">
+                    <img src="{% static 'cosmic_weight/images/Saturn.png' %}" alt="Saturn">
+                </div>
+            </div>
+            <div id="ringSeven">
+                <div id="Uranus">
+                    <img src="{% static 'cosmic_weight/images/Uranus.png' %}" alt="Uranus">
+                </div>
+            </div>
+            <div id="ringEight">
+                <div id="Neptune">
+                    <img src="{% static 'cosmic_weight/images/Neptune.png' %}" alt="Neptune">
+                </div>
+            </div>
+        </div>
+    
 </body>
+<footer>
+    <div class="footer">
+        <p>Powered By: </p>
+        
+            <div class="names">
+               
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+                <a herf="#"> name</a>
+            </div>
+          
+       
+        </div>
+    </footer>
+</html>
