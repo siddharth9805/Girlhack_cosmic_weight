@@ -31,7 +31,7 @@ This project can be built on further. We were originally going to create an orbi
 
 ### Screenshot
 
-![Alt text](image.png)
+![Alt text](screenshot_page.png)
 
 ### Credits
 
