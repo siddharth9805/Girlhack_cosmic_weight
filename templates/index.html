@@ -12,6 +12,7 @@
 
 
 <body>
+    
     <div class="header">
         <h1>Cosmic Weight</h1>
         <p>Welcome to the Cosmic Weight.</p>
@@ -19,50 +20,69 @@
         <p>Additionally you could also calculate your estimated weight on each planet.</p>
         <p>Explore and enjoy.</p>
       </div>
-    <div id="sun"></div>
-        <div class="rings">
-            <div id="ringOne">
-                <div id="Mercury">
-                    <img src="{% static 'cosmic_weight/images/Mercury.png' %}" alt="Mercury">
-                </div>
-            </div>
-            <div id="ringTwo">
-                <div id="Venus">
-                    <img src="{% static 'cosmic_weight/images/Venus.png' %}" alt="Venus">
-                </div>
-            </div>
-            <div id="ringThree">
-                <div id="Earth">
-                    <img src="{% static 'cosmic_weight/images/Earth.png' %}" alt="Earth">
-                </div>
-            </div>
-            <div id="ringFour">
-                <div id="Mars">
-                    <img src="{% static 'cosmic_weight/images/Mars.png' %}" alt="Mars">
-                </div>
-            </div>
-            <div id="ringFive">
-                <div id="Jupiter">
-                    <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" alt="Jupiter">
-                </div>
-            </div>
-            <div id="ringSix">
-                <div id="Saturn">
-                    <img src="{% static 'cosmic_weight/images/Saturn.png' %}" alt="Saturn">
-                </div>
-            </div>
-            <div id="ringSeven">
-                <div id="Uranus">
-                    <img src="{% static 'cosmic_weight/images/Uranus.png' %}" alt="Uranus">
-                </div>
-            </div>
-            <div id="ringEight">
-                <div id="Neptune">
-                    <img src="{% static 'cosmic_weight/images/Neptune.png' %}" alt="Neptune">
-                </div>
-            </div>
+    <div class="planets" id="sun">
+
+        <img src="{% static 'cosmic_weight/images/Sun.png' %}" alt="Sun">
+            <p class="desc">Sun</p>
+    </div>
+    <div class="rings">
+        <div id="ringOne">
+        <div class="planets" id="Mercury">
+            <img src="{% static 'cosmic_weight/images/Mercury.png' %}" alt="Mercury">
+            <p class="desc">Mercury</p>
+        </div>
         </div>
     
+
+    <div id="ringTwo">
+    <div class="planets" id="Venus">
+        <p class="desc">Venus</p>
+        <img src="{% static 'cosmic_weight/images/Venus.png' %}" alt="Venus">
+    </div>
+    </div>
+<div id="ringThree">
+  <div class="planets" id="Earth">
+        <p class="desc">Earth</p>
+        <img src="{% static 'cosmic_weight/images/Earth.png' %}" alt="Earth">
+    </div>
+    </div>
+<div id="ringFour">
+    <div class="planets" id="Mars">
+        <p class="desc">Mars</p>
+         <img src="{% static 'cosmic_weight/images/Mars.png' %}" alt="Mars">
+    </div>
+    </div>
+    <div id="ringFive">
+    <div class="planets" id="Jupiter">
+        <p class="desc">Jupiter</p>
+        <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" alt="Jupiter">
+     </div>
+     </div>
+    <div id="ringSix">
+    <div class="planets" id="Saturn">
+        <p class="desc">Saturn</p>
+        <img src="{% static 'cosmic_weight/images/Saturn.png' %}" alt="Saturn">
+    </div>
+    </div>  
+    <div id="ringSeven">
+    <div class="planets" id="Uranus">
+        <p class="desc">Uranus</p>
+        <img src="{% static 'cosmic_weight/images/Uranus.png' %}" alt="Uranus">
+    </div>
+    </div>
+    <div id="ringEight">
+    <div class="planets" id="Neptune">
+        <p class="desc">Neptune</p>
+        <img src="{% static 'cosmic_weight/images/Neptune.png' %}" alt="Neptune">
+    </div>
+    </div>
+    <div id="ringEight">
+        <div class="planets" id="Pluto">
+            <p class="desc">Pluto</p>
+            <img src="{% static 'cosmic_weight/images/Pluto.png' %}" alt="Pluto">
+        </div>
+        </div>
+ </div>
 </body>
 <footer>
     <div class="footer">
