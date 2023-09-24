@@ -40,7 +40,8 @@
       margin: 0 0 30px 0;
       width: 200px;
       height: auto;
-      background-color:#15479c;
+      background-color:#041c45af;
+      box-shadow: 2px 2px 20px #6883b1af;
       border-color:aliceblue;
       color:black;
   }
