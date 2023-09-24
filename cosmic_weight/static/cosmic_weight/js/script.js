@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("fired");
-    let myImg = document.getElementById("Mercury");
+    let myImg = document.getElementById("Mercury-Image");
     let theMenu = document.getElementById("Mercury-my-menu");
     let isVisible = false;
     myImg.addEventListener("click", () => {
@@ -159,4 +159,26 @@ document.addEventListener("DOMContentLoaded", () => {
             isVisible = true;
         }
     });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    var apiResponseElement = document.getElementById('api-response');
+
+    // Define the data to send in the POST request
+    var data = {'weight':document.getElementById("weight")};
+
+    // Make a POST request to the API
+    fetch('http://127.0.0.1:8000/api/planet_weight/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+        .then(response => response.json())
+        .then(data => {
+            apiResponseElement.textContent = data;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 });
