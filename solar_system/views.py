@@ -8,12 +8,6 @@ import json
 
 router = Router()
 
-@router.get('/hello/')
-def hello_world(request):
-    print('Hello World!')
-
-    return {"messgae": "Hello World"}
-
 @router.post('/planet_weight/', response={200:Planet_Weight_schema})
 def weight_calculator(request,payload:Weight_schema):
     planet=payload.planet
