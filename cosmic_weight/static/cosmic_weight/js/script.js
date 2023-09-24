@@ -161,10 +161,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 document.addEventListener('DOMContentLoaded', function () {
-    var apiResponseElement = document.getElementById('api-response');
+    var apiResponseElement = document.getElementById('Mercury-my-form');
 
     // Define the data to send in the POST request
-    var data = {'weight':document.getElementById("weight")};
+    var data = new FormData(apiResponseElement);
 
     // Make a POST request to the API
     fetch('http://127.0.0.1:8000/api/planet_weight/', {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: data,
     })
         .then(response => response.json())
         .then(data => {
