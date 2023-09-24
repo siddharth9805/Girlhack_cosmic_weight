@@ -6,7 +6,6 @@ Django==4.2.2
 django-cors-headers==4.0.0
 django-ninja==0.22.2
 django-ninja-extra==0.19.0
-django-ninja-jwt==5.2.5
 injector==0.20.1
 numpy==1.24.3
 pandas==2.0.2
