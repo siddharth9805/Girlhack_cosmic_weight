@@ -2,12 +2,13 @@
     box-sizing: border-box;
   }
   .header {
-    background-color: black;
+    background-color:transparent;
     padding: 28px;
     text-align: center;
     color:white;
-    opacity: 70%;
+   
   }
+
   .desc
   {
       display: none;
@@ -30,11 +31,50 @@
   {
       display: block;
   }
-  
-.earth{
-    color: green;
-    padding: 30px;
+ #Mercury-my-menu, #Venus-my-menu, #Earth-my-menu,#Mars-my-menu,#Jupiter-my-menu,#Saturn-my-menu,#Uranus-my-menu,#Neptune-my-menu,#Pluto-my-menu
+  {
+      display: none;
+      flex-direction: column;
+      align-items: left;
+      margin: 0 0 30px 0;
+      width: 200px;
+      height: 200px;
+      background-color:#15479c;
+      border-color:aliceblue;
+      color:black;
+     
+  }
+  .submit{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: bottom;
+    margin: 30px;
+    cursor: pointer;
+  }
+  #weight{
+    margin: 20px;
+    position: bottom;
+    color: grey;
+
+
+  }
+
+  .img-wrap
+{
+    display: flex;
+    width: 70px;
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
 }
+
 body{
     background-image:url(https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif);
     min-height: 100vh;

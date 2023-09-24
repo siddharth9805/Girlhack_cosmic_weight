@@ -4,7 +4,7 @@
 <title>CSS Template</title>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'cosmic_weight/css/style.css' %}">
-
+<script src="{% static 'cosmic_weight/js/script.js' %}"></script>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,9 @@
 
 
 <body>
-    
+
+
+>
     <div class="header">
         <h1>Cosmic Weight</h1>
         <p>Welcome to the Cosmic Weight.</p>
@@ -27,59 +29,140 @@
     </div>
     <div class="rings">
         <div id="ringOne">
+        <div class="img-wrap">
         <div class="planets" id="Mercury">
             <img src="{% static 'cosmic_weight/images/Mercury.png' %}" alt="Mercury">
             <p class="desc">Mercury</p>
+            <div class="menu" id="Mercury-my-menu">
+                <form action="/action_page.php">
+                    <label for="weight">Mercury: Enter Weight: </label><br>
+                    <input type="text" id="weight" name="weight" value="weight"><br>
+                    <input type="submit" class="submit" value="Submit">
+                  </form> 
+            </div>
+        </div>
         </div>
         </div>
     
 
     <div id="ringTwo">
+    <div class="img-wrap">
     <div class="planets" id="Venus">
         <p class="desc">Venus</p>
         <img src="{% static 'cosmic_weight/images/Venus.png' %}" alt="Venus">
+        <div class="menu" id="Venus-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Venus: Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+    </div>
     </div>
     </div>
 <div id="ringThree">
+    <div class="img-wrap">
   <div class="planets" id="Earth">
         <p class="desc">Earth</p>
         <img src="{% static 'cosmic_weight/images/Earth.png' %}" alt="Earth">
+        <div class="menu" id="Earth-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+    </div>
     </div>
     </div>
 <div id="ringFour">
+    <div class="img-wrap">
     <div class="planets" id="Mars">
         <p class="desc">Mars</p>
          <img src="{% static 'cosmic_weight/images/Mars.png' %}" alt="Mars">
+         <div class="menu" id="Mars-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+    </div>
     </div>
     </div>
     <div id="ringFive">
+        <div class="img-wrap">
     <div class="planets" id="Jupiter">
         <p class="desc">Jupiter</p>
         <img src="{% static 'cosmic_weight/images/Jupiter.png' %}" alt="Jupiter">
+        <div class="menu" id="Jupiter-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+     </div>
      </div>
      </div>
     <div id="ringSix">
+        <div class="img-wrap">
     <div class="planets" id="Saturn">
         <p class="desc">Saturn</p>
         <img src="{% static 'cosmic_weight/images/Saturn.png' %}" alt="Saturn">
+        <div class="menu" id="Saturn-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+    </div>
     </div>
     </div>  
     <div id="ringSeven">
+        <div class="img-wrap">
     <div class="planets" id="Uranus">
         <p class="desc">Uranus</p>
         <img src="{% static 'cosmic_weight/images/Uranus.png' %}" alt="Uranus">
+        <div class="menu" id="Uranus-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
+    </div>
     </div>
     </div>
     <div id="ringEight">
+        <div class="img-wrap">
     <div class="planets" id="Neptune">
         <p class="desc">Neptune</p>
         <img src="{% static 'cosmic_weight/images/Neptune.png' %}" alt="Neptune">
+        <div class="menu" id="Neptune-my-menu">
+            <form action="/action_page.php">
+                <label for="weight">Enter Weight: </label><br>
+                <input type="text" id="weight" name="weight" value="weight"><br>
+                <input type="submit" class="submit" value="Submit">
+              </form> 
+        </div>
     </div>
+        </div>
     </div>
     <div id="ringEight">
+        <div class="img-wrap">
         <div class="planets" id="Pluto">
             <p class="desc">Pluto</p>
             <img src="{% static 'cosmic_weight/images/Pluto.png' %}" alt="Pluto">
+            <div class="menu" id="Pluto-my-menu">
+                <form action="/action_page.php">
+                    <label for="weight">Enter Weight: </label><br>
+                    <input type="text" id="weight" name="weight" value="weight"><br>
+                    <input type="submit" class="submit" value="Submit">
+                  </form> 
+            </div>
+        </div>
         </div>
         </div>
  </div>
