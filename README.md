@@ -25,7 +25,7 @@ This project can be built on further. We were originally going to create an orbi
 
 4. To activate the environment, 
     - `venv\Scripts\activate` for windows. 
-    - `source venv/bin activate` for linux.
+    - `source venv/bin/activate` for linux.
 
 5. Install the required packasges using `pip install -r requirements.txt`
 
