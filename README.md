@@ -33,13 +33,13 @@ This project can be built on further. We were originally going to create an orbi
 
 6. To run the server use `python manage.py runserver`.
 
-## Docker container deployment 
+## Docker container 
 
 1. Make sure that docker is installed in your machine.
 
 2. docker run siddharth9805/girlhack_ghcr:latest.
 
-## Kubernative container deployment
+## Kubernative container
 
 1. Make sure that docker and minikube is installed in your machine.
 
