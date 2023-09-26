@@ -33,7 +33,7 @@ This project can be built on further. We were originally going to create an orbi
 
 6. To run the server use `python manage.py runserver`.
 
-## Docker container Deployment 
+## Docker container deployment 
 
 1. Make sure that docker is installed in your machine.
 
