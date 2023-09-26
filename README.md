@@ -37,17 +37,17 @@ This project can be built on further. We were originally going to create an orbi
 
 1. Make sure that docker is installed in your machine.
 
-2. docker run siddharth9805/girlhack_ghcr:latest.
+2. `docker run siddharth9805/girlhack_ghcr:latest`.
 
 ## Kubernative container
 
 1. Make sure that docker and minikube is installed in your machine.
 
-2. kubectl apply -f deployment.yaml.
+2. `kubectl apply -f deployment.yaml`.
 
-3. kubectl apply -f service.yaml.
+3. `kubectl apply -f service.yaml`.
 
-4. minikube service <service-name> --url (service name is mensioned in the service.yml file).
+4. `minikube service <service-name> --url` (service name is mensioned in the service.yml file).
 
 5. Navigate to the browser mensioned in the terminal.
 
