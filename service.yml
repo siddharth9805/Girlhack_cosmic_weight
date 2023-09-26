@@ -1,0 +1,13 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: girlhack-service
+spec:
+  selector:
+    app: girlhack-app
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000 # Assuming your application listens on port 80
+  type: NodePort # Change to NodePort or ClusterIP as needed

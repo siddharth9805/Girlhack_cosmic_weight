@@ -1,0 +1,20 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: girlhack-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: girlhack-app
+  template:
+    metadata:
+      labels:
+        app: girlhack-app
+    spec:
+      containers:            
+      - name: girlhack-project
+        image: siddharth9805/girlhack_ghcr:latest
+        ports:
+        - containerPort: 8000

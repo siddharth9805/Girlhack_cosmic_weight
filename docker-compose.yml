@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   django:
-    image: ghcr.io/siddharth9805/girlhack_ghcr:latest
+    image: girlhack_ghcr:latest
     build: .
     ports:
       - 8000:8000
